@@ -1,0 +1,12 @@
+if (RELEASE)
+	set(CMAKE_GENERATOR "Ninja")
+	set(CMAKE_C_COMPILER /usr/bin/clang)
+	set(CMAKE_CXX_COMPILER /usr/bin/clang++)
+	set(CMAKE_BUILD_TYPE Release)
+	set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -O3 -Os")
+	#add_compile_definitions(NO_LOG)
+else()
+	set(CMAKE_GENERATOR "Unix Makefiles")
+	set(CMAKE_BUILD_TYPE Debug)
+endif()
+
