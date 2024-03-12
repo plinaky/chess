@@ -8,7 +8,7 @@ void play(struct board *bo, uint16_t (*move_select) (struct board *b, uint16_t *
 {
 	uint16_t ml[MAX_MOVES];
 	struct board b[MAX_MOVES];
-	uint32_t move;
+	uint32_t move = 1;
 	uint16_t i, j;
 	uint16_t null_cnt = 0;
 	uint8_t move_cnt = 1;
